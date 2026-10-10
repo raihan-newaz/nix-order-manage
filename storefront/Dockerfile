@@ -2,15 +2,16 @@
 FROM node:20-alpine AS builder
 
 WORKDIR /app
-COPY package*.json ./
-RUN npm ci
+COPY storefront/package*.json ./storefront/
+RUN cd storefront && npm ci
 
-COPY . .
+COPY storefront ./storefront
+WORKDIR /app/storefront
 RUN npm run build
 
 # Serve with lightweight Nginx
 FROM nginx:alpine
-COPY --from=builder /app/dist /usr/share/nginx/html
+COPY --from=builder /app/storefront/dist /usr/share/nginx/html
 COPY <<'EOF' /etc/nginx/conf.d/default.conf
 server {
     listen 80;

@@ -2,15 +2,18 @@
 FROM node:20-alpine AS builder
 
 WORKDIR /app
-COPY package*.json ./
-RUN npm ci
+COPY client/package*.json ./client/
+RUN cd client && npm ci
 
-COPY . .
+# Copy required server modules for shared builder core types and client source
+COPY server/src/modules/builder/core ./server/src/modules/builder/core
+COPY client ./client
+WORKDIR /app/client
 RUN npm run build
 
 # Serve with lightweight Nginx
 FROM nginx:alpine
-COPY --from=builder /app/dist /usr/share/nginx/html
+COPY --from=builder /app/client/dist /usr/share/nginx/html
 COPY <<'EOF' /etc/nginx/conf.d/default.conf
 server {
     listen 80;
