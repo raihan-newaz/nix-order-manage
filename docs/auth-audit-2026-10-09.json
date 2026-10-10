@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Customer JWT cannot authenticate as staff",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "name": "Revoked staff session rejected",
+    "status": 403,
+    "pass": true
+  },
+  {
+    "name": "Unapproved cookie-auth write origin rejected",
+    "status": 403,
+    "pass": true
+  },
+  {
+    "name": "Invalid payment token rejected",
+    "status": 404,
+    "pass": true
+  },
+  {
+    "name": "Unsigned Woo webhook rejected",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "name": "CALL_CENTER_AGENT cannot access tracking secrets",
+    "status": 403,
+    "pass": true
+  },
+  {
+    "name": "CALL_CENTER_AGENT cannot access tracking secrets",
+    "status": 403,
+    "pass": true
+  }
+]

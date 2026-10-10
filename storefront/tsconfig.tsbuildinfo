@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/customeraccountpages.tsx","./src/landingcarousel.tsx","./src/landingpage.tsx","./src/landingthankyoupage.tsx","./src/analytics.ts","./src/api.ts","./src/main.tsx","./src/store-config.ts","./src/types.ts","./src/context/cartcontext.tsx","./src/context/customerauthcontext.tsx"],"version":"5.9.3"}

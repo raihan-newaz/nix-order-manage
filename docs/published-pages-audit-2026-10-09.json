@@ -1,0 +1,97 @@
+[
+  {
+    "slug": "returns",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "slug": "about",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "slug": "delivery",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "slug": "faq",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "slug": "privacy",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "slug": "terms",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "slug": "maintenance",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "slug": "borka",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "slug": "earbuds-pro-offer",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "slug": "borka-dubai-kaftan",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "slug": "borka-turkish-butterfly",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "slug": "borka-kashmiri-party",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "slug": "borka-front-open-coat",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "slug": "borka-double-layer-koti",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "slug": "borka-diamond-kimono",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "slug": "borka-arabic-linen",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "slug": "borka-royal-velvet",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "slug": "borka-nawab-hijab-set",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "slug": "borka-dubai-cherry",
+    "status": 200,
+    "pass": true
+  }
+]

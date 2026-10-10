@@ -1,0 +1,315 @@
+[
+  {
+    "path": "/auth/me",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/auth/users",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/orders/",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/orders/audit-nonexistent",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/couriers/steadfast/ping",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/couriers/steadfast/test",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/couriers/steadfast/balance",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/couriers/steadfast/payments",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/couriers/steadfast/payments/audit-nonexistent",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/couriers/steadfast/police-stations",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/couriers/steadfast/fraud-score/audit-nonexistent",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/couriers/steadfast/status/audit-nonexistent/audit-nonexistent",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/couriers/steadfast/returns",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/couriers/steadfast/returns/audit-nonexistent",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/couriers/steadfast/orders/audit-nonexistent/trackings",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/couriers/steadfast/events",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/couriers/steadfast/requests",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/couriers/redx/test",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/couriers/redx/stores",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/couriers/redx/stores/audit-nonexistent",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/couriers/redx/orders/audit-nonexistent",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/couriers/redx/events",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/couriers/locations/audit-nonexistent",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/couriers/configs",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/couriers/pathao/locations",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/couriers/pathao/stores",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/couriers/pathao/events",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/couriers/reconciliation",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/woocommerce/config",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/inventory/products",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/inventory/products/audit-nonexistent",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/inventory/warehouses",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/inventory/categories",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/inventory/attributes",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/purchases/suppliers",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/purchases/orders",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/purchases/orders/audit-nonexistent",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/accounting/accounts",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/accounting/expense-categories",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/accounting/expenses",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/accounting/ad-costs",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/accounting/profit-loss",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/accounting/overview",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/crm/",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/crm/audit-nonexistent",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/messaging/configs",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/messaging/greensms/stats",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/messaging/templates",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/messaging/logs",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/dashboard/summary",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/audit/",
+    "status": 401,
+    "pass": true
+  },
+  {
+    "path": "/crm",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "path": "CRM list has no authentication fields",
+    "pass": true
+  },
+  {
+    "path": "CRM detail has no authentication fields",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "path": "/orders?sortBy=total",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "path": "/dashboard/summary",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "path": "/inventory/products",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "path": "/storefront/manage/pages",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "path": "/storefront/products?limit=1.5",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "path": "/storefront/settings",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "path": "/storefront/pages/borka-dubai-cherry",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "path": "/builder/public-landings/flow-borka-dubai-cherry",
+    "status": 200,
+    "pass": true
+  },
+  {
+    "path": "Public product cost leak",
+    "pass": true
+  }
+]

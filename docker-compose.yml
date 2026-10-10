@@ -1,0 +1,42 @@
+services:
+  # 1. NIX OMS Backend API
+  nix-server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: nix-oms-server
+    restart: unless-stopped
+    env_file:
+      - ./server/.env
+    ports:
+      - "127.0.0.1:5000:5000"
+    networks:
+      - nix-network
+
+  # 2. Admin Dashboard Client
+  nix-client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: nix-oms-admin
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3007:80"
+    networks:
+      - nix-network
+
+  # 3. Customer Storefront
+  nix-storefront:
+    build:
+      context: ./storefront
+      dockerfile: Dockerfile
+    container_name: nix-oms-storefront
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3008:80"
+    networks:
+      - nix-network
+
+networks:
+  nix-network:
+    driver: bridge

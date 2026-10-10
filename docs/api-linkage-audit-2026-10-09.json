@@ -1,0 +1,28 @@
+{
+  "checked": 217,
+  "skippedConcatenatedPaths": 2,
+  "unmatched": [],
+  "manuallyVerified": [
+    {
+      "file": "client\\src\\builder\\SubmissionsPanel.tsx",
+      "method": "get",
+      "path": "/api/builder/pages/VALUE/submissions"
+    },
+    {
+      "file": "client\\src\\builder\\SubmissionsPanel.tsx",
+      "method": "patch",
+      "path": "/api/builder/submissions/VALUE"
+    },
+    {
+      "file": "client\\src\\builder\\SubmissionsPanel.tsx",
+      "method": "delete",
+      "path": "/api/builder/submissions/VALUE"
+    },
+    {
+      "file": "client\\src\\builder\\useStudio.ts",
+      "method": "post",
+      "path": "/api/builder/pages/VALUE/VALUE"
+    }
+  ],
+  "notes": "Nested submissionRoutes and generated publish/unpublish routes verified against server definitions; two concatenated paths verified manually (product detail and landing coupon delete). Static route linkage is not a full integration test."
+}

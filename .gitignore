@@ -1,0 +1,22 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+*.log
+
+# Local secrets and runtime data
+.env
+.env.*
+!.env.example
+server/.env
+server/.env.*
+!server/.env.example
+server/prisma/*.db*
+server/prisma/.migration-data.json
+server/uploads/
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

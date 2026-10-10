@@ -1,0 +1,6 @@
+/* Search inputs keep the existing field edge without a second focus rectangle. */
+input:is([type="search"], [role="searchbox"], [placeholder*="search" i], [aria-label*="search" i], [placeholder*="find" i], [aria-label*="find" i]):focus,
+input:is([type="search"], [role="searchbox"], [placeholder*="search" i], [aria-label*="search" i], [placeholder*="find" i], [aria-label*="find" i]):focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
