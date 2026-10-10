@@ -3,7 +3,7 @@ FROM node:20-alpine AS builder
 
 WORKDIR /app
 COPY client/package*.json ./client/
-RUN cd client && npm ci
+RUN cd client && npm install
 
 # Copy required server modules for shared builder core types and client source
 COPY server/src/modules/builder/core ./server/src/modules/builder/core
