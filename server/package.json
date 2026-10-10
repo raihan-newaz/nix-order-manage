@@ -25,6 +25,7 @@
     "attributes:backfill-storefront": "ts-node src/scripts/backfillAttributePresentation.ts",
     "couriers:sync-locations": "ts-node src/scripts/syncCourierLocations.ts",
     "messaging:seed-sms": "ts-node src/scripts/seedSmsTemplates.ts",
+    "media:sync": "ts-node src/scripts/syncMediaAssets.ts",
     "test:audit": "node --test -r ts-node/register src/tests/audit.test.ts"
   },
   "dependencies": {
