@@ -8,10 +8,12 @@ services:
     restart: unless-stopped
     env_file:
       - ./server/.env
-    ports:
-      - "127.0.0.1:5000:5000"
-    networks:
-      - nix-network
+    # MariaDB is bound to the VPS loopback. Host networking lets this
+    # container reach it at 127.0.0.1 while API_HOST keeps the API private.
+    network_mode: host
+    environment:
+      PORT: "5000"
+      API_HOST: 127.0.0.1
 
   # 2. Admin Dashboard Client (my.nix.bd)
   nix-client:

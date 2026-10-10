@@ -188,6 +188,6 @@ if (!config.isDev && fs.existsSync(clientDistPath)) {
 app.use(errorHandler);
 
 const PORT = config.port;
-server.listen(PORT, () => {
-  console.log(`🚀 NIX OMS & ERP Server running on http://localhost:${PORT}`);
+server.listen(PORT, config.apiHost, () => {
+  console.log(`🚀 NIX OMS & ERP Server running on http://${config.apiHost}:${PORT}`);
 });

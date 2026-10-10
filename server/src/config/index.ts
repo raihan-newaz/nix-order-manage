@@ -30,6 +30,7 @@ const developmentClientUrls = [
 export const config = {
   builderStorefrontOrigin,
   port: process.env.PORT ? parseInt(process.env.PORT, 10) : 5000,
+  apiHost: process.env.API_HOST || '0.0.0.0',
   jwtSecret,
   dataEncryptionKey,
   jwtExpiresIn: process.env.JWT_EXPIRES_IN || '7d',
