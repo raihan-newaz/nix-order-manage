@@ -60,6 +60,28 @@ input[type="number"]::-webkit-outer-spin-button {
     @apply border-slate-200/80 dark:border-slate-800;
   }
 
+  ::selection {
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+  }
+
+  ::-moz-selection {
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+  }
+
+  .dark ::selection,
+  .dark *::selection {
+    background-color: #3b82f6 !important;
+    color: #ffffff !important;
+  }
+
+  .dark ::-moz-selection,
+  .dark *::-moz-selection {
+    background-color: #3b82f6 !important;
+    color: #ffffff !important;
+  }
+
   html,
   body,
   #root,
