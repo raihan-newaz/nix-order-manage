@@ -69,7 +69,7 @@ export const getProduct = async (id: string) => {
 };
 export const getCachedStorefrontSettings = (): StorefrontSettings | undefined => {
   try {
-    const raw = localStorage.getItem('nix-storefront-settings-v1');
+    const raw = localStorage.getItem('nix-storefront-settings-v2');
     return raw ? JSON.parse(raw) : undefined;
   } catch {
     return undefined;
@@ -78,7 +78,7 @@ export const getCachedStorefrontSettings = (): StorefrontSettings | undefined =>
 export const getStorefrontSettings = async () => {
   const result = await request<{ success: boolean; settings: StorefrontSettings }>('/api/storefront/settings');
   try {
-    localStorage.setItem('nix-storefront-settings-v1', JSON.stringify(result.settings));
+    localStorage.setItem('nix-storefront-settings-v2', JSON.stringify(result.settings));
   } catch { /* storage full / private mode */ }
   return result;
 };
